@@ -1,6 +1,28 @@
 html, body {
     height: 100%;
     margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template: auto auto 5fr auto / 1fr 4fr;
+}
+
+.sidebar {
+    grid-row: 1/3;
+}
+
+.main-content {
+    grid-column: 2/3;
+}
+
+.header {
+    
+}
+
+ul {
+    list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
