@@ -21,7 +21,6 @@ html, body {
 
 .header {
     display: grid;
-    /* grid-template-rows: repeat(2, 1fr); */
 }
 
 .search-bar {
@@ -29,6 +28,21 @@ html, body {
     justify-content: space-between;
     align-items: center;
     height: 50px;
+}
+
+.user-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+}
+
+.user-info>div>p {
+    margin: 0px;
 }
 
 input {
