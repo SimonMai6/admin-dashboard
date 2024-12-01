@@ -25,9 +25,42 @@ html, body {
 
 .search-bar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 50px;
+}
+.search-bar>a {
+    height: 30px;
+}
+
+.search-bar>div {
+    font-weight: bold;
+}
+
+.profile-image {
+    border-radius: 30px;
+}
+
+.user-info>a {
+    height: 50px;
+}
+
+.user-bar>div p:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(77, 168, 253);
+    border: none;
+    border-radius: 30px;
+    height: 30px;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+.card {
+    border: 1px black solid;
 }
 
 .user-bar {
@@ -39,6 +72,7 @@ html, body {
 
 .user-info {
     display: flex;
+    align-items: center;
 }
 
 .user-info>div>p {
@@ -47,9 +81,9 @@ html, body {
 
 input {
     border-style: none;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 400px;
-    height: 20px;
+    height: 25px;
     background-color: rgb(223, 223, 223);
     padding: 0px 5px;
 }
@@ -71,7 +105,7 @@ ul {
     font-weight: bold;
 }
 
-a {
+.sidebar>ul>li>a {
     color: white;
     text-decoration: none;
 }
