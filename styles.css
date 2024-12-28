@@ -20,23 +20,24 @@ html, body {
 /* Search Bar */
 .search-bar {
     height: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    justify-content: space-between;
+    /* justify-items: center;
+    align-items: center; */
 }
 
 .search {
-    width: 450px;
+    width: 750px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 input {
     border-style: none;
     border-radius: 20px;
-    width: 400px;
+    width: 600px;
     height: 25px;
     background-color: rgb(223, 223, 223);
     padding: 0px 5px;
@@ -48,31 +49,31 @@ input:focus {
     border-color: rgb(157, 161, 161);
 }
 
-.user-icon>a>.profile-image {
-    height: 30px;
-}
-
 .search-bar>.user-icon>div {
     font-weight: bold;
 }
 
 .user-icon {
-    width: 200px;
+    width: 250px;
     display:flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .profile-image {
-    border-radius: 30px;
+    border-radius: 40px;
+}
+
+.user-icon>div {
+    font-size: 20px;
 }
 
 /* User Bar */
 .user-bar {
     height: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -88,6 +89,7 @@ input:focus {
 .user-info {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .user-info>div>p {
@@ -98,14 +100,15 @@ button {
     background-color: rgb(77, 168, 253);
     border: none;
     border-radius: 30px;
-    height: 30px;
-    width: 80px;
+    height: 40px;
+    width: 100px;
     color: white;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .user-button {
-    width: 300px;
+    width: 400px;
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -124,6 +127,8 @@ button {
     height: 60px;
     align-items: center;
     display: flex;
+    font-size: 40px;
+    gap: 10px;
 }
 
 ul {
@@ -131,18 +136,16 @@ ul {
     padding: 0;
     margin: 0;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .sidebar>ul>li>a {
     color: white;
     text-decoration: none;
-}
-
-.sidebar ul li{
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Main Content */
